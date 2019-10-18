@@ -9,9 +9,18 @@ class Base{
 int coordinates, maxcoordinates;
 int width = 3;
 public:
-  Base(){maxcoordinates = 50; coordinates = rand()%maxcoordinates+1;}
-  int get_coordinates(){ return coordinates;}
-  int get_width(){ return width;}
+  Base(){
+    maxcoordinates = 50; 
+    coordinates = rand()%maxcoordinates+1;
+        }
+  int get_coordinates()
+  { 
+    return coordinates;
+  }
+  int get_width()
+  { 
+    return width;
+  }
 };
 
 class Player{
@@ -30,11 +39,21 @@ public:
     money = money-rate;
     return rate;
   }
-  string get_name(){  return name;}
-  int get_money(){return money;}
-  void set_name(string input_name){name = input_name;}
-  void set_money(int input_money){money = input_money;}
-  int shoot(int v, int ang){ return (int)(pow(v, 2)*sin((ang*M_PI)/180))/9.8;}
+  string get_name(){ 
+    return name;
+  }
+  int get_money(){
+    return money;
+  }
+  void set_name(string input_name){
+    name = input_name;
+  }
+  void set_money(int input_money){
+    money = input_money;
+  }
+  int shoot(int v, int ang){ 
+    return (int)(pow(v, 2)*sin((ang*M_PI)/180))/9.8;
+  }
 };
 
 class Bank{
