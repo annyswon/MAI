@@ -82,7 +82,7 @@ public:
   void registration()
   {
 
-    cout<<"Yoo-hoo!"<<endl;
+    cout<<" Hello!"<<endl;
     cout<<"Enter the number of players"<<endl;
     cin>>count_of_players;
     cout<<endl;
@@ -95,7 +95,6 @@ public:
       new_player.set_name(name);
       new_player.set_money(10);
       cout<<"Weclome to  "<<name<<" "<<"Your balance is "<<new_player.get_money()<<" "<<"gold"<<endl;
-      cout<<"▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ █ ▇ ▆ ▅ ▄ ▃ ▂ ▁"<<endl;
       cout<<endl;
       list_of_players.push_back(new_player);
     }
@@ -114,7 +113,6 @@ public:
         cout<<"Player "<<list_of_players[i].get_name()<<" "<<"makes a bet 5 gold"<<endl;
       }
       cout<<endl<<"Base installation"<<endl;
-      cout<<"▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ █ ▇ ▆ ▅ ▄ ▃ ▂ ▁"<<endl;
       cout<<"The base is set. Coordinates: "<<base.get_coordinates()<< ". "<<"Width of base: "<<base.get_width()<< endl;
       click();
     }
